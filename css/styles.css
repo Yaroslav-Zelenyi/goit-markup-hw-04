@@ -51,6 +51,7 @@ font-size: 14px;
  background-color: #F5F4FA;
 }
 
+
 /* logo */
 
 .logo {
@@ -126,6 +127,23 @@ font-size: 14px;
  letter-spacing: 0.02em;   
  text-decoration: none;
 }
+/* .contacts .item::before {
+    content: "";
+    display: block;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 161px;
+    height: 16px;
+}
+.icon-envelope::before {
+    background-image: url(../images/svg/envelope.svg);
+} */
+
+
+/* .contacts .item:nth-child(1)::before {
+ background-image: url(../images/svg/envelope.svg);
+} */
 
 /* hero */
 
@@ -134,7 +152,7 @@ font-size: 14px;
  align-items: center;   
  padding-bottom: 200px; 
  padding-top: 200px;
-}
+} 
 .hero-title {
  color: #FFFFFF;
  font-weight: 900;
@@ -149,6 +167,22 @@ font-size: 14px;
  margin-left: auto;
  margin-right: auto;
 }  
+.hero-fon {
+ max-width: 1600px;
+ height: 600px;
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: cover;
+ margin-left: auto;
+ margin-right: auto; 
+ background-color: var(--secondary-big-color);
+ background-image: linear-gradient(
+ to right,
+ rgba(47, 48, 58, 0.4),
+ rgba(47, 48, 58, 0.4)
+ ),
+ url("../images/hero.jpg");
+}
 
 /* button */
 
@@ -185,7 +219,28 @@ font-size: 14px;
 .feature .item:last-child {
  margin-right: 0;
 }
-
+.feature .item::before {
+ content: "";
+ display: block;
+ margin-bottom: 30px;
+ height: 120px;
+ background-repeat: no-repeat;
+ background-position: center;
+ background-color: #F5F4FA;
+}
+.feature .item:nth-child(1)::before {
+ background-image: url(../images/svg/antenna\ 1.svg);
+}
+.feature .item:nth-child(2)::before {
+ background-image: url(../images/svg/clock\ 1.svg);
+}
+.feature .item:nth-child(3)::before {
+ background-image: url(../images/svg/diagram\ 1.svg);
+}
+.feature .item:nth-child(4)::before {
+ background-image: url(../images/svg/astronaut\ 1.svg);
+}
+ 
 /* img list */
 .img {
  display: flex;
@@ -395,9 +450,6 @@ padding-bottom: 60px;
  margin-bottom: 0;
  }
 .portfolio-project .desc {
- /* margin-top: 20px; */
- /* padding-left: 24px; */
-
  color: var(--title-text-color); 
  font-weight: 700;
  font-size: 18px;
@@ -405,10 +457,7 @@ padding-bottom: 60px;
  letter-spacing: 0.06em;  
 }
 .link-branch{
- /* padding-left: 24px; */
- /* padding-bottom: 20px; */
  margin-top: 4px;
-
  font-size: 16px;
  line-height: 1.9;
 }
