@@ -27,7 +27,6 @@ font-size: 14px;
 }
 .img-block {
  display: block;
- margin-bottom: 30px;
 }
 
 .container {
@@ -225,6 +224,7 @@ font-size: 14px;
  background-repeat: no-repeat;
  background-position: center;
  background-color: #F5F4FA;
+ border-radius: 4px;
 }
 .feature .item:nth-child(1)::before {
  background-image: url(../images/svg-feature/antenna\ 1.svg);
@@ -365,13 +365,12 @@ font-size: 14px;
 
 /* Постійні клієнти */
  
-.clients-list {
- display: flex;
- text-align: center;
- justify-content: center;
- flex-wrap: wrap;
+.section-clients {
  padding-top: 94px;
  padding-bottom: 94px;
+}
+.clients-list {
+ flex-wrap: wrap;
 }
 .clients-title {
  margin-bottom: 50px;
@@ -404,14 +403,15 @@ font-size: 14px;
 .client-icon {
  fill: #AFB1B8;
 }  
-.client-icon:hover,
-.client-icon:focus {
- fill:var(--accent-color)
-}
 .clients-link:hover,
 .clients-link:focus {
  border: 1px solid#2196F3
 }
+.clients-link .client-icon:hover ,
+.clients-link .client-icon:focus {
+ fill:var(--accent-color)
+}
+
 
 /* contacts-footer, address list */
 
@@ -452,18 +452,21 @@ padding-bottom: 60px;
 .footer-gap {
  display: flex;
  gap: 95px;
+ align-items: baseline;
 }
 
 .join-block {
  display: flex;
  flex-direction: column;
- padding-top: 6px;
 }
 .join-title {   
+ font-size: 14px;
  line-height: 1.14;
  font-weight: 700;
  color: #FFFFFF;
  margin-bottom: 20px;
+ text-transform: uppercase;
+
 }
 .join { 
  display: flex;
@@ -550,6 +553,16 @@ padding-bottom: 60px;
  border-left-style: solid;
  border-left-color: #ECECEC; 
 }
+
+.portfolio-link {
+ display: block;
+ color: currentColor;
+ text-decoration: none;
+}
+.portfolio-link:hover,
+.portfolio-link:focus {
+ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .portfolio-project {
  display: flex;
  flex-wrap: wrap;
@@ -569,11 +582,7 @@ padding-bottom: 60px;
  margin-bottom: 0;
  } */
 
-.portfolio-project .item:hover,
-.portfolio-project .item:focus {
- box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-.portfolio-project .desc {
+ .desc {
  color: var(--title-text-color); 
  font-weight: 700;
  font-size: 18px;
