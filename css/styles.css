@@ -408,8 +408,8 @@ font-size: 14px;
 .clients-link:focus {
  border: 1px solid#2196F3
 }
-.clients-link .client-icon:hover ,
-.clients-link .client-icon:focus {
+.clients-link:hover .client-icon,
+.clients-link:focus .client-icon {
  fill:var(--accent-color)
 }
 
